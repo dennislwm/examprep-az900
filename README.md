@@ -106,7 +106,14 @@ Most questions cover features that are General Availability (GA). The exam may c
         - [Describe the purpose of Azure Sovereign Regions Azure Government cloud services and Azure China cloud services](pages/identity-governance-privacy-compliance.md#describe-the-purpose-of-azure-sovereign-regions-azure-government-cloud-services-and-azure-china-cloud-services)
 - [**Describe Azure cost management and Service Level Agreements**](pages/cost-sla.md)
     - [Describe methods for planning and managing costs](pages/cost-sla.md#describe-methods-for-planning-and-managing-costs)
+        - [Identify factors that can affect costs resource types, services, locations, ingress and egress traffic](pages/cost-sla.md#identify-factors-that-can-affect-costs-resource-types-services-locations-ingress-and-egress-traffic)
+        - [Identify factors that can reduce costs reserved instances, reserved capacity, hybrid use benefit, spot pricing](pages/cost-sla.md#identify-factors-that-can-reduce-costs-reserved-instances-reserved-capacity-hybrid-use-benefit-spot-pricing)
+        - [Describe the functionality and usage of the Pricing calculator and the Total Cost of Ownership TCO calculator](pages/cost-sla.md#describe-the-functionality-and-usage-of-the-pricing-calculator-and-the-total-cost-of-ownership-tco-calculator)
+        - [Describe the functionality and usage of Azure Cost Management](pages/cost-sla.md#describe-the-functionality-and-usage-of-azure-cost-management)
     - [Describe Azure Service Level Agreements SLAs and service lifecycles](pages/cost-sla.md#describe-azure-service-level-agreements-slas-and-service-lifecycles)
+        - [Describe the purpose of an Azure Service Level Agreement SLA](pages/cost-sla.md#describe-the-purpose-of-an-azure-service-level-agreement-sla)
+        - [Identify actions that can impact an SLA i.e. Availability Zones](pages/cost-sla.md#identify-actions-that-can-impact-an-sla-ie-availability-zones)
+        - [Describe the service lifecycle in Azure Public Preview and General Availability](pages/cost-sla.md#describe-the-service-lifecycle-in-azure-public-preview-and-general-availability)
 
 # References
 
