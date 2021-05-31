@@ -9,6 +9,7 @@ This section exam weighting has remained the same at 20-25%.
   - [Define Azure Active Directory](#define-azure-active-directory)
   - [Describe the functionality and usage of Azure Active Directory](#describe-the-functionality-and-usage-of-azure-active-directory)
   - [Describe the functionality and usage of Conditional Access, Multi-Factor Authentication MFA, and Single Sign-On SSO](#describe-the-functionality-and-usage-of-conditional-access-multi-factor-authentication-mfa-and-single-sign-on-sso)
+  - [Azure AD Connect](#azure-ad-connect)
 - [Describe Azure governance features](#describe-azure-governance-features)
   - [Describe the functionality and usage of Role-Based Access Control RBAC](#describe-the-functionality-and-usage-of-role-based-access-control-rbac)
   - [Describe the functionality and usage of resource locks](#describe-the-functionality-and-usage-of-resource-locks)
@@ -48,6 +49,10 @@ Azure AD provides services such as:
 * **Application management**: manage your own applications by using Azure AD, with features like _application proxy_, SSO etc.
 * **Device management**: enables devices to be registered to Azure AD and managed through tools like **Microsoft Intune**.
 
+**Azure AD Identity Protection** enables organizations to configure automated responses to detect suspicious actions relaated to user identities.
+
+By default, all users and guests in your Active AD can invite guests even if they're not assigned to an admin role. _External collaboration_ settings let you turn guest invitations on or off for different types of users in your organization.
+
 ### Describe the functionality and usage of Conditional Access, Multi-Factor Authentication (MFA), and Single Sign-On (SSO)
 
 #### Single Sign-On (SSO)
@@ -68,7 +73,11 @@ MFA requires one or more elements of identification that fall into three categor
 * **Something the user has**: e.g. code sent to the user's mobile phone
 * **Something the user is**: typically some sort of biometric property, such as fingerprint or face scan
 
-Azure AD provides MFA authentication capabilities during sign-in via the Microsoft Authenticator app, phone call, or SMS code.
+Azure AD provides MFA authentication capabilities during sign-in:
+
+* Call to phone: places an automated voice call.
+* Text message to phone: sends a text message that contains a verification code.
+* Notification or verification code through mobile app: sends a push notification or a verification code through the Microsoft Authentication app.
 
 #### Conditional Access
 
@@ -84,6 +93,16 @@ Conditional access is useful when you need to:
 * **Block accesss from untrusted sources**: for example, from unknown locations, etc.
 
 Conditional access comes with a _What If_ tool, which helps you plan and troubleshoot your conditional access policies. You can use this tool to model your proposed policies across recent sign-in attempts from your users to see what the impact would have been if those policies had been enabled.
+
+### Azure AD Connect
+
+**Azure AD Connect** is the Microsoft tool designed to meet and accomplish your hybrid identitiy goals. It provides the following features:
+
+* **Password hash synchronization**: Sign-in method that synchronizes a hash of a user's on-premises AD password with Azure AD.
+* **Pass-through authentication**: Sign-in method that allows users to use the same password on-premises and in the cloud.
+* **Federation integration**: Optional part of Azure AD Connect that can be used to configure a hybrid environment using an on-premises AD FS infrastructure.
+* **Synchronization**: Responsible for creating users, groups, and other objects, as well as, making sure identity information for your on-premises users and groups is matching the clooud.
+* **Health Monitoring**: Azure AD Connect Health can provide robust monitoring and provide a central location in the Azure portal.
 
 ## Describe Azure governance features
 
@@ -105,6 +124,11 @@ Azure RBAC is enforced on any action that's initiated against an Azure resource 
 RBAC uses an _allow model_, i.e. it allows you to perform certain actions such as read, write, or delete. You can have multiple roles assigned to you for a single resource, in which you inherit permissions from both roles.
 
 You can apply Azure RBAC to an individual, group, and other special identity types, such as service principals and managed identities. These identity types are used by applications and services to automate access to Azure resources.
+
+Azure has some built-in roles:
+
+* Contributor: manage apps but cannot change access to them
+* Operator: read, enable, and disable apps but cannot edit or update them.
 
 ### Describe the functionality and usage of resource locks
 

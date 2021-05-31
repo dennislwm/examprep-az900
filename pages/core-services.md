@@ -55,7 +55,7 @@ Availability zones are connected through high-speed, private fiber-optic network
 
 _Resource group_ is a logical container for resources deployed on Azure. All resources must be in a resource group, and a resource can only be a member of a single resource group.
 
-Resource groups cannot be nested, however you can move resources between resource groups.
+Resources within a resource group can be from different Azure regions. Resource groups cannot be nested, however you can move resources between resource groups.
 
 Resource groups can help manage and organize your Azure resources. If you delete a resource group, all resources contained within it are also deleted.
 
@@ -213,6 +213,8 @@ _Azure VPN Gateway_ instances are deployed in Azure Virtual Network instances an
 
 You can deploy only one VPN gateway in each virtual network, but you can use one gateway to connect to multiple locations, which includes other virtual networks or on-premises datacenters.
 
+A virtual network gateway is composed of two or more VMs that are deployed to a specific subnet you create, which is called the _gateway subnet_. You can't directly configure the VMs that are part of the virtual network gateway and you should never deploy additional resources to the gateway subnet.
+
 When you deploy a VPN gateway, you specify the VPN type: either _policy-based_ or _route-based_. The main difference between these two types of VPNs is how traffic to be encrypted is specified.
 
 _Policy-based VPN gateways_ specify statically the IP address of packets that should be encrypted through each tunnel. This type of device evaluates every data packet against those sets of IP addresses to choose the tunnel where that packet is going to be sent through.
@@ -247,7 +249,7 @@ ExpressRoute supports three connectivity models:
 
 #### Container (Blob) Storage
 
-To begin using **Azure Storage**, you first create an Azure Storage account to store your data objects.
+To begin using **Azure Storage**, you first create an Azure Storage account to store your data objects. Data that is copied to an Azure Storage account is maintained automatically in at least three copies.
 
 **Azure Container Storage**, previously called _Blog Storage_, can store massive amounts of data, such as text or binary data. Blob Storage is unstructured, meaning that there are no restrictions on the kinds of data it can hold. 
 

@@ -73,6 +73,8 @@ Azure Databricks help you unlock insights from all your data and build _AI_ solu
 
 **Azure Data Lake Analytics** is an on-demand analytics job service that enables you to write queries to transform your data and extract valuable insights.  The analytics service can handle jobs of any scale instantly by setting the dial for how much power you need. You only pay for your job when it's running, making it more cost-effective. 
 
+It includes all capabilities required to make it easy for data scientists to store data of any size, shape and speed. It removes the complexities of ingesting and storing all of your data while making it faster to get up and running with batch, streaming, and interactive analytics.
+
 ### Describe the benefits and usage of Azure Machine Learning, Cognitive Services and Azure Bot Service
 
 ##### Azure Machine Learning
@@ -226,9 +228,13 @@ The template orchestrates the creation of those resources in parallel, that is a
 
 ### Describe the functionality and usage of Azure Monitor
 
-**Azure Monitor** is a platform for collecting, analyzing, visualizing and potentially taking action based on the metric and logging data from your entire Azure and on-premises environment.
+**Azure Monitor** is a platform for collecting, analyzing, visualizing and potentially taking action based on the metric and logging data from your entire Azure and on-premises environment. It helps you understand how your applications are performing and proactively identifies issues affecting them and the resources they depend on.
 
 You can view real-time and historical performance across each layer of your architecture, or aggregated and detailed information. You can view high-level reports on the **Azure Monitor Dashboard** or create custom views by using **Power BI** and **Kusto** queries.
+
+All data collected by Azure Monitor fits into one of two fundamental types, metrics and logs. Telemetry events such as events and traces are stored as logs in addition to performance data so that it can all be combined for analysis.
+
+**Log Analytics** is a web too used to write and execute Azure Monitor log queries. It can be used to correlate events from multiple resources into a centralized repository.
 
 Some products such as **Azure Application Insights (AAI)**, a service for sending telemetry information from application source code to Azure, uses Azure Monitor under the hood. With AAI, you can take advantage of the powerful data-analysis platform in Azure Monitor to gain deep insights into an application's operations and diagnose errors without having to wait for users to report them.
 

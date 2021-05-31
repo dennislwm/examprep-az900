@@ -41,13 +41,17 @@ The cloud helps you move faster and innovate in our ever-changing digital world,
 
 There are several benefits that a cloud environment has over a physical environment. For example, cloud-based applications employ a myriad of related strategies.
 
+* **High Availability (HA)**: Designed to be available 99.999% of the time, or as close to it as possible.
+
+* **Fault Tolerance**: goes one step further than HA by guaranteeing zero downtime.
+
 * **Reliablity**: Provide a continuous user experience with no apparent downtime even when things go wrong.
 
 * **Scalability**: Scale applications in two ways, while taking advantage of autoscaling:
   * _Vertically_: Increase computing capacity by adding RAM or CPUs to a virtual machine.
   * _Horizontally_: Increase computing capacity by adding more virtual machines.
 
-* **Elasticity**: Configure application to always have the resources they need.
+* **Elasticity**: Configure application to always have the resources they need, increasing or decreasing resources depending to meet the changing demands without worrying about capacity planning.
 
 * **Agility**: Deploy and configure resources quickly as your application requirements change.
 
@@ -91,7 +95,7 @@ An advantage of this model is rapid deployment of new compute devices, e.g. Azur
 
 PaaS model is a managed hosting environment. A cloud provider manages the virtual machines and networking resources, while a cloud tenant deploys their applications into the managed hosting environment.
 
-An advantage of this model is a cloud tenant does not have to deal with both physical hardware and software requirements, e.g. Azure App Services.
+An advantage of this model is a cloud tenant does not have to deal with both physical hardware and software requirements. Examples of PaaS are Azure App Service and Azure SQL database.
 
 ### Describe serverless computing
 
@@ -129,4 +133,12 @@ Computing resources are used exclusively by users from one business or organizat
 
 Computing resources that are hosted by both a public cloud and a private cloud by allowing data and applications to be shared between them.
 
+In this model, the public cloud effectively becomes an extension of the private cloud to form a single, uniform cloud.
+
 ### Compare and contrast the three types of cloud computing
+
+The two characteristics of public cloud are metered pricing and self-service management.
+
+The two characteristics of private cloud are dedicated hardware and inadequate SLA.
+
+The characteristic of hybrid cloud is a high level of compatibility between the underlying software and services used by both the public and private clouds.

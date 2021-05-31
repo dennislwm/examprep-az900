@@ -18,13 +18,30 @@ This section exam weighting has decreased to 10-15% from 20-25%.
 
 ## Describe methods for planning and managing costs
 
-Azure offers both free and paid subscription options:
+Azure offers both free and paid subscription options. However only paid subscriptions are eligible for limit or quota increases, that can be requested via the online customer support request.
 
 * **Free trial**: provides you with 12 months of popular free services, a credit to your balance for 30 days, and more than 25 services that are _always_ free.
 
 * **Pay-as-you-go**: pay for what you use by attaching a credit/debit card to your account, and also you can apply for volume discounts and prepaid invoicing.
 
 * **Member offers**: you existing membership to certain Microsoft products might provide you with Azure credits and reduced rates, e.g. Visual Studio subscribers, Microsoft for Startups members etc.
+
+You can segment Azure for each of your departments by having separate subscription to minimize administrative effort.
+
+Azure offers support plans:
+
+* **Basic**: no technical support
+
+* **Developer**: business hours access via email
+
+* **Standard, Professional Direct, Premier**: 24x7 access via phone and email
+
+The **Premier** plan has additional support for:
+
+* **Architecture**: custom support such as design reviews, performance tuning, configuration and implementation assistance
+* **Operations**: technical account manager-led service reviews and reporting
+* **Training**: engineering-led web seminars, and on-demand training
+* **Proactive Guidance**: designated technical account manager
 
 ### Identify factors that can affect costs (resource types, services, locations, ingress and egress traffic)
 
@@ -95,7 +112,9 @@ The options that you can configure in the Pricing calculator vary between produc
 
 ### Describe the functionality and usage of Azure Cost Management
 
-**Azure Cost Management** + Billing is a free service that helps you understand your Azure bill, manage your account and subscriptions, monitor and control Azure spending, and optimize resource use. Its features include:
+**Azure Cost Management** + Billing is a free service that helps you understand your Azure bill, manage your account and subscriptions, monitor and control Azure spending, and optimize resource use. It is available to a pay-as-you-go subscription and an Enterprise Agreement.
+
+Its features include:
 
 * Reporting - generate reports using historical data and forecast future usage and expenditure
 * Data enrichment - improve accountability by categorizing resources with tags
@@ -107,7 +126,7 @@ The options that you can configure in the Pricing calculator vary between produc
 
 ### Describe the purpose of an Azure Service Level Agreement (SLA)
 
-A _service-level agreement_ (SLA) is a formal agreement between a service company, such as Azure, and its customers. Understanding the SLA for each Azure service helps you to understand what guarantees you can expect from them.
+A _service-level agreement_ (SLA) is a formal agreement between a service company, such as Azure, and its customers of its feature availability. Understanding the SLA for each Azure service helps you to understand what guarantees you can expect from them.
 
 A typical SLA breaks down into these sections:
 
